@@ -16,5 +16,7 @@ deploy:
   file:
     - build/distributions/packt4free-${TRAVIS_TAG}.tar
     - build/distributions/packt4free-${TRAVIS_TAG}.zip
+  skip_cleanup: true
   on:
     repo: madhead/packt4free
+    tag: true
