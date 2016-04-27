@@ -1,7 +1,10 @@
 language: java
+
+sudo: false
+
 jdk:
   - oraclejdk8
 
 script: .travis/script.sh
 
-deploy: .travis/deploy.sh
+after_success: .travis/after_success.sh
