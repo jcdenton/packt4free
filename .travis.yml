@@ -19,4 +19,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: madhead/packt4free
-    tag: true
+    tags: true
