@@ -1,0 +1,29 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+	}
+}
+
+apply plugin: 'kotlin'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+	jcenter()
+
+	maven {
+		url 'http://dl.bintray.com/kotlinx/kotlinx'
+	}
+}
+
+dependencies {
+	compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+
+	compile "org.jsoup:jsoup:$jsoupVersion"
+	compile "com.sun.mail:javax.mail:$mailVersion"
+	compile "org.jetbrains.kotlinx:kotlinx.html.jvm:$kotlinxVersion"
+}
