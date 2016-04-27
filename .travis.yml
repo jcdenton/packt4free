@@ -1,0 +1,7 @@
+language: java
+jdk:
+  - oraclejdk8
+
+script: .travis/script.sh
+
+deploy: .travis/deploy.sh
