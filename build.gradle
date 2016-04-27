@@ -9,6 +9,7 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'application'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 
@@ -27,3 +28,5 @@ dependencies {
 	compile "com.sun.mail:javax.mail:$mailVersion"
 	compile "org.jetbrains.kotlinx:kotlinx.html.jvm:$kotlinxVersion"
 }
+
+mainClassName = 'by.dev.madhead.packt4free.MainKt'
