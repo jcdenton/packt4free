@@ -68,6 +68,6 @@ bintray {
 
 	filesSpec {
 		from "$buildDir/distributions"
-		into '/'
+		into '.'
 	}
 }
